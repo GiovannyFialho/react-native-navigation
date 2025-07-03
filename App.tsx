@@ -1,5 +1,5 @@
-import { Home } from "@/app/home";
+import { Product } from "@/app/product";
 
 export default function App() {
-  return <Home />;
+  return <Product />;
 }
