@@ -1,12 +1,12 @@
 import { View } from "react-native";
 
-import { type StackRoutesProps } from "@/routes/stack-routes";
+import { type BottomRoutesProps } from "@/routes/bottom-routes";
 
 import { ButtonIcon } from "@/components/button-icon";
 import { Header } from "@/components/header";
 import { Title } from "@/components/title";
 
-export function Home({ navigation }: StackRoutesProps<"home">) {
+export function Home({ navigation }: BottomRoutesProps<"home">) {
   return (
     <View
       style={{ flex: 1, padding: 32, paddingTop: 54, backgroundColor: "#fff" }}
