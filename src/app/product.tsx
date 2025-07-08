@@ -1,12 +1,12 @@
 import { View } from "react-native";
 
-import { type StackRoutesProps } from "@/routes/stack-routes";
+import { type DrawerRoutesProps } from "@/routes/drawer-routes";
 
 import { ButtonIcon } from "@/components/button-icon";
 import { Header } from "@/components/header";
 import { Title } from "@/components/title";
 
-export function Product({ navigation, route }: StackRoutesProps<"product">) {
+export function Product({ navigation, route }: DrawerRoutesProps<"product">) {
   return (
     <View
       style={{ flex: 1, padding: 32, paddingTop: 54, backgroundColor: "#fff" }}
@@ -18,6 +18,13 @@ export function Product({ navigation, route }: StackRoutesProps<"product">) {
         />
 
         <Title>Product {route.params?.id}</Title>
+
+        <ButtonIcon
+          name="menu"
+          onPress={() => {
+            navigation.toggleDrawer();
+          }}
+        />
       </Header>
     </View>
   );
